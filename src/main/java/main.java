@@ -1,68 +1,34 @@
-import assignment.Delete;
-import assignment.Insert;
-import assignment.Search;
-import assignment.Traverse;
+import assignment.LinkedList.DLLNode;
+import assignment.LinkedList.DLinkedList;
 
 void main() {
-    int[] arr = {10, 7, 11, 5, 13, 8, 38, 37, 14, 92, 84, 74, 77, 20, 40, 47, 33, 65, 62, 69, 73};
-    IO.println("");                                                      
-    IO.println("------------------------------------------------------");
-    IO.println("Task 1.1 reverse traverse");
-    Traverse tv = new Traverse(arr);
-    int[] revArr = tv.inReverse();
-    for(int elem : revArr){
-           IO.print(elem + " ");
+
+    DLLNode nNode = new DLLNode();
+    nNode.setData(1);
+    DLinkedList list = new DLinkedList();
+    list.setHead(nNode);
+    list.setTail(nNode);
+
+    // add items to linked list
+    for (int i = 2; i < 11; i++) {
+        nNode = new DLLNode();
+        nNode.setData(i);
+        list.AppendNode(nNode);
     }
 
-  int myValue = 666;
-  IO.println("");
-  IO.println("------------------------------------------------------");
-  IO.println(String.format( "Task 1.2 insert %d at start ", myValue));
-  Insert in = new Insert(arr);
-  int[] newArr = in.atStart(myValue);
-  for(int elem : newArr){
-         IO.print(elem + " ");
-  }
-  IO.println("");                                                           
-  IO.println("------------------------------------------------------");
-  IO.println(String.format( "Task 1.2 insert %d at end ", myValue));
-  newArr = in.atEnd(myValue);
-  for(int elem : newArr){
-         IO.print(elem + " ");
-  }
-  int myRandPosition = (int) ((Math.random() * (arr.length-1)));
-  IO.println("");
-  IO.println("------------------------------------------------------");
-  IO.println(String.format( "Task 1.2 insert %d at random index %d ", myValue, myRandPosition));
-  newArr = in.atIndex(myValue, myRandPosition)   ;
-  for(int elem : newArr){            
-         IO.print(elem + " ");       
-  }                                  
+    IO.println();
 
+    // print the content of the list
+    list.print();
 
-  Delete del = new Delete(arr);
-  IO.println("");
-  IO.println("------------------------------------------------------");
-  IO.println("Task 1.3 delete element at beginning ");
+    IO.println("items removed.");
 
-  newArr = del.atStart();
-  for(int elem : newArr){
-         IO.print(elem + " ");
-  }
-  IO.println("");
-  IO.println("------------------------------------------------------");
-  IO.println("Task 1.3 delete element at end ");
-  newArr = del.atEnd();
-  for(int elem : newArr){
-         IO.print(elem + " ");
-  }
-  myRandPosition = (int) ((Math.random() * (arr.length-1)));
-  IO.println("");
-  IO.println("------------------------------------------------------");
-  IO.println(String.format( "Task 1.3 delete at given index %d ",myRandPosition));
-  newArr = del.atIndex(myRandPosition)   ;
-  for(int elem : newArr){
-         IO.print(elem + " ");
-  }
+    // remove items from linked list
+    list.RemoveNode(list.getHead());
+    list.RemoveNode(list.getHead());
+    list.RemoveNode(list.getTail());
+
+    // print the content of the list
+    list.print();
 
 }
