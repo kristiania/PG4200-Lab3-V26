@@ -4,7 +4,7 @@
 
 ## Task 1:  Doubly Linked Lists
 
-In the folder (`src/main/java/assignment/DLLinkedList`), you find the classes 
+In the folder (`src/main/java/assignment/LinkedList`), you find the classes 
 - _DLinkedList_ a simple and incomplete implementation of the data structure doubly linked list.
 - _DLLNode_ is a class for handling the nodes in _DLinkedList_
 
@@ -25,6 +25,10 @@ In DLinkedList.java implement the following method:
 - _removeNode(ListNode nNode)_
   removes node _nNode_ from current list.
 - Hint: handle the cases with care where _nNode_ is either the tail of the head of the list.
+
+### Extra practice:
+
+Implement circular doubly linked list together with insert and remove methods.
 
 ### Hints and stuff
 
