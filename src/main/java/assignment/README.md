@@ -16,7 +16,7 @@ In DLinkedList.java implement the following method:
   inserts the node _nNode_ after node _pAfter_ in the current list.
 - Hint: handle the case with care where _pAfter_ is the tail of the list (the last element), and _nNode_ becomes the new _tail_ 
 
-- Extra: handle the case where you insert an element at the beginning of the list.
+- Extra: implement the case where you insert an element at the beginning of the list.
 
 ### 2) Remove an element from the  Doubly Linked lists
 
