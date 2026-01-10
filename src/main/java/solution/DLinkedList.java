@@ -30,12 +30,12 @@ public class DLinkedList {
     }
 
     // Appends a node to the end of the list
-    public void AppendNode(DLLNode nNode) {
-        InsertNode(nNode, tail);
+    public void appendNode(DLLNode nNode) {
+        this.insertNode(nNode, tail);
     }
 
     // Inserts a node into the list after pAfter
-    public void InsertNode(DLLNode nNode, DLLNode pAfter) {
+    public void insertNode(DLLNode nNode, DLLNode pAfter) {
         nNode.setNext(pAfter.getNext());
         nNode.setPrevious(pAfter);
         if(!pAfter.equals(getTail())) {
@@ -48,7 +48,7 @@ public class DLinkedList {
     }
 
     // Removes the specified node from the list
-    public void RemoveNode(DLLNode nNode) {
+    public void removeNode(DLLNode nNode) {
 
         if(nNode.equals(this.head) ) {
               nNode.getNext().setPrevious(nNode.getPrevious());

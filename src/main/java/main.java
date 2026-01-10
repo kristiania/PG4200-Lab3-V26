@@ -13,7 +13,7 @@ void main() {
     for (int i = 2; i < 11; i++) {
         nNode = new DLLNode();
         nNode.setData(i);
-        list.AppendNode(nNode);
+        list.appendNode(nNode);
     }
 
     IO.println();
@@ -24,9 +24,9 @@ void main() {
     IO.println("items removed.");
 
     // remove items from linked list
-    list.RemoveNode(list.getHead());
-    list.RemoveNode(list.getHead());
-    list.RemoveNode(list.getTail());
+    list.removeNode(list.getHead());
+    list.removeNode(list.getHead());
+    list.removeNode(list.getTail());
 
     // print the content of the list
     list.print();

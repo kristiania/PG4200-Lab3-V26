@@ -28,12 +28,12 @@ public class DLinkedList {
     }
 
     // Appends a node to the end of the list
-    public void AppendNode(DLLNode nNode) {
-        InsertNode(nNode, tail);
+    public void appendNode(DLLNode nNode) {
+        this.insertNode(nNode, tail);
     }
 
     // Task 1.1.: Insert a node into the list after pAfter
-    public void InsertNode(DLLNode nNode, DLLNode pAfter) {
+    public void insertNode(DLLNode nNode, DLLNode pAfter) {
         /*....
         *
         * Write your code here
@@ -42,7 +42,7 @@ public class DLinkedList {
     }
 
     // Task 1.2 : Remove the specified node from the list
-    public void RemoveNode(DLLNode nNode) {
+    public void removeNode(DLLNode nNode) {
         /*....
          *
          * Write your code here
