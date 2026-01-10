@@ -44,11 +44,11 @@ In the folder (`src/main/java/assignment/Stacks`), you find the class
 
 ### 2) Use _push()_ and _pop()_ for reserving an array
 
-- In class _ReversedArray_ complete the method _returnInReverse(Integer[] a)_ by using _push()_ and _pop()_ in order to return of copy of the input array in reversed order.
+- In class _ReversedArray_ complete the method _returnInReverse(Integer[] a)_ by using _push()_ and _pop()_ in order to return a copy of the input array in reversed order.
 
 ### Extra: algorithm for checking code using Stack 
 
-- Use the implemented _push()_ and _pop()_ operations in ArrayStack for implementing an algorithm that checks if a String with java code has a correct setting of brackets
+- Use the implemented _push()_ and _pop()_ operations in ArrayStack for implementing an algorithm that checks if a String with java code has a correct setting of parentheses, brackets, & braces. That is, "_{[]()}{{}}_" is correct whilst "_{(])}_" is not.
 
 - you may use the class _CorrectlySetBrackets_ and method _isCorrectExpression(String exp)_.
 
