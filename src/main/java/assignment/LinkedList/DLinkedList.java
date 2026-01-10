@@ -55,7 +55,7 @@ public class DLinkedList {
         DLLNode nNode = null;
         IO.print("Current list: ");
         for (nNode = this.getHead(); nNode != null; nNode = nNode.getNext()) {
-            IO.print(nNode.data + " ");
+            IO.print(nNode.getData() + " ");
         }
         IO.println("");
     }
