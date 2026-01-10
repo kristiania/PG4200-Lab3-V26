@@ -26,6 +26,30 @@ In DLinkedList.java implement the following method:
   removes node _nNode_ from current list.
 - Hint: handle the cases with care where _nNode_ is either the tail of the head of the list.
 
+--------
+
+## Task 2:  Stack
+
+In the folder (`src/main/java/assignment/Stacks`), you find the class
+
+- _ArrayStack_ which implements interface _Stack_ but misses the correct implementation of _push()_ and _pop()_.
+
+### 1) Implement  _push()_ and _pop()_ 
+
+- find the commented lines in _ArrayStack_ and implement those operations correctly.
+
+### 2) Use _push()_ and _pop()_ for reserving an array
+
+- In class _ReversedArray_ complete the method _returnInReverse(Integer[] a)_ by using _push()_ and _pop()_ in order to return of copy of the input array in reversed order.
+
+### Extra: algorithm for checking code using Stack 
+
+- Use the implemented _push()_ and _pop()_ operations in ArrayStack for implementing an algorithm that checks if a String with java code has a correct setting of brackets
+
+- you may use the class _CorrectlySetBrackets_ and method _isCorrectExpression(String exp)_.
+
+- in _main()_ you will find two examples for testing of that method.
+
 ### Hints and stuff
 
 - Hint: you may already find code for invoking the methods in the compact class _main.java_.  More information on compact class in java25 here: https://openjdk.org/jeps/512
