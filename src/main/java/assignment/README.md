@@ -42,15 +42,15 @@ Implement circular doubly linked list together with insert and remove methods.
 
 In the folder (`src/main/java/assignment/Stacks`), you find the class
 
-- _ArrayStack_ which implements interface _Stack_ but misses the correct implementation of _push()_ and _pop()_.
+- _SArray_ which implements interface _Stack_ but misses the correct implementation of _push()_ and _pop()_.
 
 ### exercise03 - implement  _push()_ and _pop()_ 
 
-- find the commented lines in _ArrayStack_ and implement those operations correctly.
+- find the commented lines in _SArray_ and implement those operations correctly.
 
-### exercise04 (revised) - use _push()_ and _pop()_ for reserving an ArrayStack
+### exercise04 (revised) - use _push()_ and _pop()_ for reserving an SArray
 
-- In class _ReversedStack_ complete the method _returnInReverse(ArrayStack a)_ by using _push()_ and _pop()_ in order to return of copy of the input array in reversed order.
+- In class _ReversedStack_ complete the method _returnInReverse(SArray a)_ by using _push()_ and _pop()_ in order to return of copy of the input array in reversed order.
 
 --------
 
@@ -58,7 +58,7 @@ In the folder (`src/main/java/assignment/Stacks`), you find the class
 
 ### exercise05 - algorithm for checking code using Stack 
 
-- Use the implemented _push()_ and _pop()_ operations in ArrayStack for implementing an algorithm that checks if a String with java code has a correct setting of brackets
+- Use the implemented _push()_ and _pop()_ operations in SArray for implementing an algorithm that checks if a String with java code has a correct setting of brackets
 
 - you may use the class _CorrectlySetBrackets_ and method _isCorrectExpression(String exp)_.
 
