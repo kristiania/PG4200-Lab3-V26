@@ -6,39 +6,50 @@ package solution;
  *
  */
 
-import assignment.Stacks.ArrayStack;
-import assignment.Stacks.Stack;
+import resources.Stacks.Stack;
 
 public class CorrectlySetBrackets {
 
     public boolean isCorrectExpression(String exp) {
-        Stack st = new ArrayStack();
+        Stack st = new SArray();
         int i = 0;
         for (char c : exp.toCharArray()) {
-            if (c == '[') {
-                st.push('[');
-            } else if (c == '(') {
-                st.push('(');
-            } else if (c == '{') {
-                st.push('{');
-            } else if (c == ']') {
-                if (! st.pop().equals('['))
-                {
-                    IO.println("Wrong bracket at position " + i);
-                    return false;
-                };
-            } else if (c == ')') {
-                if (! st.pop().equals('('))
-                {
-                    IO.println("Wrong bracket at position " + i);
-                    return false;
-                };
-            } else if (c == '}') {
-                if (! st.pop().equals('{'))
-                {
-                    IO.println("Wrong bracket at position " + i);
-                    return false;
-                };
+            switch (c) {
+                case '[':
+                    st.push('[');
+                    break;
+                case '(':
+                    st.push('(');
+                    break;
+                case '{':
+                    st.push('{');
+                    break;
+                case ']':
+                    // check if there are no opening brackets left..
+                    // otherwise pop the stack.
+                    // this should give you a matching opening bracket.
+                    if (st.isEmpty() ||  ! st.pop().equals('['))
+                    {
+                        IO.println("Wrong bracket ']' at position " + i);
+                        return false;
+                    };
+                    break;
+                case ')':
+                    if (st.isEmpty() || ! st.pop().equals('('))
+                    {
+                        IO.println("Wrong parentheses ')' at position " + i);
+                        return false;
+                    };
+                    break;
+                case '}':
+                    if (st.isEmpty() || ! st.pop().equals('{'))
+                    {
+                        IO.println("Wrong brace '}' at position " + i);
+                        return false;
+                    };
+                    break;
+                default:
+                    // arbitrary char -- do nothing
             }
             i++;
         }

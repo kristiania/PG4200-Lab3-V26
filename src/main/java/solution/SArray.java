@@ -1,21 +1,21 @@
 package solution;
 
-import assignment.Stacks.Stack;
-import assignment.Stacks.StackEmptyException;
-import assignment.Stacks.StackFullException;
+import resources.Stacks.Stack;
+import resources.Stacks.StackEmptyException;
+import resources.Stacks.StackFullException;
 
-public class ArrayStack implements Stack {
+public class SArray implements Stack {
 
     public static final int CAPACITY = 1000; //# default capacity of the stack
     private int capacity;                    // maximum capacity of the stack.
     private Object S[];                       // S holds the elements of the stack
     private int top = -1;                    // the top element of the stack.
  
-    public ArrayStack() {       //# Initialize the stack with default capacity
+    public SArray() {       //# Initialize the stack with default capacity
         this(CAPACITY);
     }
 
-    public ArrayStack(int cap) {  //# Initialize the stack with given capacity
+    public SArray(int cap) {  //# Initialize the stack with given capacity
         capacity = cap;
         S = new Object[capacity];
     }
@@ -47,5 +47,13 @@ public class ArrayStack implements Stack {
         elem = S[top];
         S[top--] = null;               //# Dereference S[top] and decrement top
         return elem;
+    }
+
+    public SArray returnInReverse() {
+        SArray rev = new SArray(size());
+        while (!isEmpty()) {
+            rev.push(pop());
+        }
+        return rev;
     }
 }

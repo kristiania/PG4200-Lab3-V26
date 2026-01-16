@@ -1,4 +1,4 @@
-package assignment.Stacks;
+package resources.Stacks;
 
 public interface Stack {
 
@@ -9,10 +9,10 @@ public interface Stack {
     public abstract boolean isEmpty(); 
 
     // Inspect the top element, without removing it or otherwise modifying the stack.
-    public abstract Object top() throws StackEmptyException; 
+    public abstract Object top() throws StackEmptyException;
 
     // Insert an element at the top.
-    public abstract void push(Object element) throws StackFullException; 
+    public abstract void push(Object element) throws StackFullException;
 
     // Remove the top element.
     public abstract Object pop() throws StackEmptyException;

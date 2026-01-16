@@ -1,4 +1,4 @@
-package assignment.Stacks;
+package assignment.ArrayStacks;
 
 /*
  *  
@@ -6,14 +6,18 @@ package assignment.Stacks;
  *
  */
 
+import resources.Stacks.Stack;
+
 public class CorrectlySetBrackets {
 
     public boolean isCorrectExpression(String exp) {
+        Stack st = new SArray();
         /*
          *
          * Extra task: write your code here.
          *
          */
+
         return true;
 
     }

@@ -1,4 +1,4 @@
-package assignment.Stacks;
+package resources.Stacks;
 
 public class StackFullException extends RuntimeException {
     public StackFullException(String err) {

@@ -1,6 +1,12 @@
 # Lab practice 3
 
 --------
+## Task 0: Singly Linked Lists
+
+In the folder `src/main/java/resources/Lists` you can find the implementations of the data structure singly linked lists from the second lecture.
+Study the code to understand how the nodes and the  insert and remove operations are implemented. 
+You can find an example on how you use the insert method for inserting an element in `src/main/java/main.java`.
+
 
 ## Task 1:  Doubly Linked Lists
 
@@ -8,7 +14,7 @@ In the folder (`src/main/java/assignment/LinkedList`), you find the classes
 - _DLinkedList_ a simple and incomplete implementation of the data structure doubly linked list.
 - _DLLNode_ is a class for handling the nodes in _DLinkedList_
 
-### 1) Insert a new element in Doubly Linked lists
+### exercise01 - insert a new element in Doubly Linked lists
 
 In DLinkedList.java implement the following method:
 
@@ -18,7 +24,7 @@ In DLinkedList.java implement the following method:
 
 - Extra: implement the case where you insert an element at the beginning of the list.
 
-### 2) Remove an element from the  Doubly Linked lists
+### exercise02 - remove an element from the  Doubly Linked lists
 
 In DLinkedList.java implement the following method:
 
@@ -38,15 +44,19 @@ In the folder (`src/main/java/assignment/Stacks`), you find the class
 
 - _ArrayStack_ which implements interface _Stack_ but misses the correct implementation of _push()_ and _pop()_.
 
-### 1) Implement  _push()_ and _pop()_ 
+### exercise03 - implement  _push()_ and _pop()_ 
 
 - find the commented lines in _ArrayStack_ and implement those operations correctly.
 
-### 2) Use _push()_ and _pop()_ for reserving an array
+### exercise04 (revised) - use _push()_ and _pop()_ for reserving an ArrayStack
 
-- In class _ReversedArray_ complete the method _returnInReverse(Integer[] a)_ by using _push()_ and _pop()_ in order to return of copy of the input array in reversed order.
+- In class _ReversedStack_ complete the method _returnInReverse(ArrayStack a)_ by using _push()_ and _pop()_ in order to return of copy of the input array in reversed order.
 
-### Extra: algorithm for checking code using Stack 
+--------
+
+## Extra task: evaluating expressions 
+
+### exercise05 - algorithm for checking code using Stack 
 
 - Use the implemented _push()_ and _pop()_ operations in ArrayStack for implementing an algorithm that checks if a String with java code has a correct setting of brackets
 
